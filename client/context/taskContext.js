@@ -4,7 +4,7 @@ import { useUserContext } from "./userContext";
 import toast from "react-hot-toast";
 
 const TasksContext = createContext();
-const serverUrl = "http://localhost:8000/api/v1";
+const serverUrl = "https://nextjs-task-manager.onrender.com/api/v1";
 
 export const TasksProvider = ({ children }) => {
   const userId = useUserContext().user._id;
